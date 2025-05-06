@@ -2,3 +2,5 @@
   command = "mkdocs build"
   publish = "site"
 
+[build.environment]
+  MISE_SETTINGS = "python.compile=false"
