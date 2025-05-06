@@ -1,0 +1,15 @@
+<footer>
+  <div class="footer-content">
+    <p style="text-align: center;">&copy; 2025 RevaAI, Inc. — All rights reserved.</p>
+    <p>
+      <!-- Add Previous and Next buttons -->
+      {% if previous_page %}
+        <a href="{{ previous_page.url }}" class="prev">Previous</a>
+      {% endif %}
+      {% if next_page %}
+        <a href="{{ next_page.url }}" class="next">Next</a>
+      {% endif %}
+    </p>
+  </div>
+</footer>
+

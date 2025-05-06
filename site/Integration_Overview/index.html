@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Integration - RevaAI</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Integration";
+        var mkdocs_page_input_path = "Integration_Overview.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> RevaAI
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Integration</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">RevaAI</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Integration</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><strong>Integrations Overview: GitLab, GitHub, and Amazon Verified Permissions
+(AVP)</strong></p>
+<p>Reva's platform enables centralized policy management by integrating
+with GitLab, GitHub, and Amazon Verified Permissions (AVP). These
+integrations serve distinct purposes in the policy lifecycle: GitLab and
+GitHub are used for distributing policies created in Reva via
+version-controlled repositories, while the entire policy lifecycle in
+AVP is fully managed by Reva. Reva acts as the central interface for
+authoring, distributing, versioning, and auditing policies across all
+three systems --- combining developer-friendly workflows with
+cloud-scale policy enforcement.</p>
+<p><strong>GitLab Integration</strong></p>
+<p>Reva integrates with GitLab to streamline the distribution of policies
+created within the Reva platform. Policies are stored in a
+version-controlled GitLab repository, allowing teams to collaborate on
+policy development and promote changes across environments using
+established Git workflows.</p>
+<p><strong>Key Features:</strong></p>
+<p>a.  Distribution Only: GitLab is used for policy storage and versioning
+    but does not participate in enforcement.</p>
+<p>b.  Merge-Based Collaboration: Teams review and approve policy updates
+    through GitLab Merge Requests.</p>
+<p>c.  Change Tracking: All policy modifications are captured via Git
+    commit history, supporting traceability and rollback.</p>
+<p>d.  Automated Synchronization: Once approved, changes are automatically
+    synced back to Reva for activation.</p>
+<p><strong>GitHub Integration</strong></p>
+<p>Reva's integration with GitHub functions similar to GitLab, offering a
+Git-based workflow for policy distribution. Policies authored in Reva
+are pushed to or pulled from a GitHub repository, enabling secure,
+collaborative change management through Pull Requests.</p>
+<p><strong>Key Features:</strong></p>
+<p>a.  Distribution Only: GitHub serves as the version-controlled source of
+    truth; it is not responsible for enforcement.</p>
+<p>b.  Pull Request Workflow: Policy changes follow GitHub's PR review and
+    approval process before deployment.</p>
+<p>c.  Visibility and Auditing: Synced updates are logged in Reva and
+    traceable through GitHub commit history.</p>
+<p>d.  Continuous Sync: Merged changes are automatically reflected in
+    Reva's internal policy store.</p>
+<p><strong>Amazon Verified Permissions (AVP) Integration</strong></p>
+<p>Reva's integration with Amazon Verified Permissions (AVP) enables
+full-scale policy enforcement using AWS's Cedar-based policy engine.
+Policies authored and versioned in Reva are synchronized to AVP's policy
+store, where they are evaluated in real time to determine access
+permissions.</p>
+<p><strong>Key Features:</strong></p>
+<p>a.  Complete Lifecycle Management: Reva creates, configures, and
+    maintains AVP policy stores within AWS environments.</p>
+<p>b.  Built-in Version Control: All policy updates are versioned and
+    governed directly through Reva.</p>
+<p>c.  Scalable Enforcement: AVP evaluates policies at runtime, delivering
+    low-latency access decisions.</p>
+<p>d.  Governance-Driven Management: Reva oversees policy drafting,
+    approvals, deployment, and audit logging.</p>
+<p>e.  Real-Time Auditing: AVP decision logs are ingested via AWS
+    CloudTrail, giving administrators full visibility within Reva.</p>
+              
+            </div>
+          </div><footer>
+  <div class="footer-content">
+    <p style="text-align: center;">&copy; 2025 RevaAI, Inc. — All rights reserved.</p>
+    <p>
+      <!-- Add Previous and Next buttons -->
+      
+      
+    </p>
+  </div>
+</footer>
+
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+site_name: RevaAI
+nav:
+  - Introduction: index.md
+  - Integration: Integration_Overview.md
+theme: 
+  name: readthedocs
+  custom_dir: overrides
