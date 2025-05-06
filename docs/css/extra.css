@@ -1,0 +1,17 @@
+/* Always show navigation buttons */
+.md-footer-nav {
+  display: block !important;
+}
+
+/* Style the buttons */
+.md-footer-nav__link {
+  padding: 0.8rem;
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.md-footer-nav__link:hover {
+  background-color: var(--md-primary-fg-color);
+  color: white !important;
+}

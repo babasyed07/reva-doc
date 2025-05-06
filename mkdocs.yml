@@ -1,7 +1,28 @@
-site_name: RevaAI
+site_name: Reva Governance and Authorization Platform
+site_description: Comprehensive governance and authorization platform
+site_author: RevaAI, Inc.
+copyright: "© 2025 RevaAI, Inc. — All rights reserved."
 nav:
-  - Introduction: index.md
-  - Integration: Integration_Overview.md
-theme: 
-  name: readthedocs
+  - Documentation: 
+    - Introduction: index.md
+    - Integration: Integration_Overview.md
+
+theme:
+  name: material
   custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+extra_css:
+  - css/extra.css
