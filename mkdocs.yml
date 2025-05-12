@@ -3,24 +3,24 @@ site_description: Comprehensive governance and authorization platform
 site_author: RevaAI, Inc.
 copyright: "© 2025 RevaAI, Inc. — All rights reserved."
 nav:
-  - Documentation: 
-    - Introduction: index.md
-    - Integration: Integration_Overview.md
-      - Amazon Verified Permission:
-      - GitHub:
-      - GitLab: 
-    - Application:
-      - Onboarding:
-      - Policy Management: 
-    - Library:
-    - Notification:
-    - Settings:
-      - Users and Groups:
-      - Category Management:
-      - Reva Authorization:
-      -Reva Schema:
-  - API Documentation:
-  - Release Notes:
+  - Documentation:
+      - Introduction: index.md
+      - Integration:
+          - Overview: Integration_Overview.md
+          - Amazon Verified Permission: integration/amazon.md
+          - GitLab: integration/gitlab.md
+      - Application:
+          - Onboarding: application/onboarding.md
+          - Policy Management: application/policy.md
+      - Library: library.md
+      - Notification: notification.md
+      - Settings:
+          - Users and Groups: settings/users-groups.md
+          - Category Management: settings/category.md
+          - Reva Authorization: settings/auth.md
+          - Reva Schema: settings/schema.md
+  - API Documentation: api.md
+  - Release Notes: release-notes.md
 theme:
   name: material
   custom_dir: overrides
