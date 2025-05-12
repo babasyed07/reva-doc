@@ -5,16 +5,18 @@ copyright: "© 2025 RevaAI, Inc. — All rights reserved."
 nav:
   - Documentation:
       - Introduction: index.md
-      - Integration:
-          - Overview: Integration_Overview.md
+      - Integration: 
+          - Overview: integration/overview.md
           - Amazon Verified Permission: integration/amazon.md
           - GitLab: integration/gitlab.md
+          - GitHub: integration/github.md
       - Application:
           - Onboarding: application/onboarding.md
           - Policy Management: application/policy.md
       - Library: library.md
       - Notification: notification.md
       - Settings:
+          - Overview: settings/overview.md
           - Users and Groups: settings/users-groups.md
           - Category Management: settings/category.md
           - Reva Authorization: settings/auth.md
