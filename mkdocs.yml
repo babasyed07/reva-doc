@@ -6,7 +6,21 @@ nav:
   - Documentation: 
     - Introduction: index.md
     - Integration: Integration_Overview.md
-
+      - Amazon Verified Permission:
+      - GitHub:
+      - GitLab: 
+    - Application:
+      - Onboarding:
+      - Policy Management: 
+    - Library:
+    - Notification:
+    - Settings:
+      - Users and Groups:
+      - Category Management:
+      - Reva Authorization:
+      -Reva Schema:
+  - API Documentation:
+  - Release Notes:
 theme:
   name: material
   custom_dir: overrides
