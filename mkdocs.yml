@@ -3,8 +3,10 @@ site_description: Comprehensive governance and authorization platform
 site_author: RevaAI, Inc.
 copyright: "© 2025 RevaAI, Inc. — All rights reserved."
 nav:
-  - Documentation:
+  - Documentation: 
       - Introduction: index.md
+      - Home Page: home.md
+      - Architecture: architecture/overview.md
       - Integration: 
           - Overview: integration/overview.md
           - Amazon Verified Permission: integration/amazon.md
@@ -13,16 +15,16 @@ nav:
       - Application:
           - Onboarding: application/onboarding.md
           - Policy Management: application/policy.md
-      - Library: library.md
-      - Notification: notification.md
+      - Library: library/library.md
+      - Notification: notification/notification.md
       - Settings:
           - Overview: settings/overview.md
           - Users and Groups: settings/users-groups.md
           - Category Management: settings/category.md
           - Reva Authorization: settings/auth.md
           - Reva Schema: settings/schema.md
-  - API Documentation: api.md
-  - Release Notes: release-notes.md
+  - API Documentation: api/api.md
+  - Release Notes: releasenotes/release-notes.md
 theme:
   name: material
   custom_dir: overrides
