@@ -2,7 +2,7 @@
 
 The architecture diagram represents the Reva Governance and Authorization Platform, designed to enforce fine-grained, scalable, and auditable access control across distributed environments. The platform follows a modular structure, separating concerns between policy administration, decision-making, information retrieval, enforcement, and auditing. The platform ensures that authorization decisions are made dynamically by evaluating real-time context and up-to-date policies while maintaining a complete record of every access decision.
 
-![Reva Architecture Diagram](img/architecture.png)
+![Architecture Diagram](../img/architecture.png)  
 *Figure: Reva Governance and Authorization Platform Architecture*
 
 ## Core Components
